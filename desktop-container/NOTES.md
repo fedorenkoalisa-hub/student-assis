@@ -1,0 +1,2 @@
+- desktop-container/NOTES.md – Electron/NW.js-обгортка веб-інтерфейсу
+для запуску як десктопного застосунку
