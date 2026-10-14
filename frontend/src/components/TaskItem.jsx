@@ -1,11 +1,4 @@
-function TaskItem({ task }) {
-  return (
-    <li className={`task-card priority-${task.priority}`}>
-      <span>{task.title}</span>
-      <span> - {task.priority}</span>
-    </li>
-  );
-  import styled from "styled-components";
+import styled from "styled-components";
 
 const StyledCard = styled.li`
   display: flex;
@@ -15,6 +8,14 @@ const StyledCard = styled.li`
   border-left: 4px solid
     ${(props) => (props.$priority === "high" ? "#e63946" : "#2a9d8f")};
 `;
+
+function TaskItem({ task }) {
+  return (
+    <li className={`task-card priority-${task.priority}`}>
+      <span>{task.title}</span>
+      <span> - {task.priority}</span>
+    </li>
+  );
 }
 
 export default TaskItem;
